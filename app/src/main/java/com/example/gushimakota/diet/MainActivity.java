@@ -1,11 +1,13 @@
 package com.example.gushimakota.diet;
 
+import android.content.res.ColorStateList;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.graphics.Color;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -21,26 +23,48 @@ public class MainActivity extends ActionBarActivity {
 
         cal = 100;
         calTextView = (TextView) findViewById(R.id.caltextView);
-        calTextView.setText(String.valueOf(cal));
+        setCalText();
     }
 
     public void cake(View v){
         cal = cal-8;
-        calTextView.setText(String.valueOf(cal));
+        setCalText();
     }
 
     public void sweets(View v){
         cal = cal-5;
-        calTextView.setText(String.valueOf(cal));
+        setCalText();
     }
 
     public void humber(View v){
         cal = cal-12;
-        calTextView.setText(String.valueOf(cal));
+        setCalText();
     }
 
     public void ramen(View v){
         cal = cal-17;
+        setCalText();
+    }
+
+    public void sports(View v){
+        cal = cal+10;
+        setCalText();
+
+    }
+
+    public void reset(View v){
+        cal = 100;
+        setCalText();
+    }
+
+    public void setCalText(){
+        if(cal>60){
+            calTextView.setTextColor(Color.BLACK);
+        }else if(cal>30){
+            calTextView.setTextColor(Color.BLUE);
+        }else{
+            calTextView.setTextColor(Color.RED);
+        }
         calTextView.setText(String.valueOf(cal));
     }
 

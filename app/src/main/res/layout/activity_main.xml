@@ -13,16 +13,23 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="0"
-            android:id="@+id/caltextView"
-            android:layout_gravity="center_horizontal"
-            android:textSize="50dp"
-            android:background="#fffafff9"
-            android:layout_weight="2"
-            android:gravity="center_vertical" />
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/caltextView"
+                android:layout_gravity="center_horizontal"
+                android:textSize="50dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -36,32 +43,32 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/cakebutton"
                 android:layout_weight="1"
-                android:background="@drawable/cake"
-                android:onClick="cake" />
+                android:onClick="cake"
+                android:background="@drawable/cake" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/swbutton"
                 android:layout_weight="1"
-                android:onClick="sweets" />
+                android:onClick="sweets"
+                android:background="@drawable/snack" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/humbutton2"
                 android:layout_weight="1"
-                android:onClick="humber" />
+                android:onClick="humber"
+                android:background="@drawable/hum" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/ramenbutton3"
                 android:layout_weight="1"
-                android:onClick="ramen" />
+                android:onClick="ramen"
+                android:background="@drawable/ramen" />
 
         </LinearLayout>
 
@@ -77,15 +84,19 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/sportsbutton2"
                 android:layout_weight="1"
-                android:onClick="sports" />
+                android:onClick="sports"
+                android:background="@drawable/sports" />
 
             <Button
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="説明"
-                android:id="@+id/expbutton"
+                android:layout_height="match_parent"
+                android:text="RESET"
+                android:id="@+id/resetpbutton"
                 android:layout_weight="1"
-                android:onClick="explain" />
+                android:onClick="reset"
+                android:background="#ffffffff"
+                android:layout_margin="10dp" />
         </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>
