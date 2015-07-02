@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#fffffd68">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="0"
+            android:id="@+id/caltextView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="50dp"
+            android:background="#fffafff9"
+            android:layout_weight="2"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cakebutton"
+                android:layout_weight="1"
+                android:background="@drawable/cake"
+                android:onClick="cake" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/swbutton"
+                android:layout_weight="1"
+                android:onClick="sweets" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/humbutton2"
+                android:layout_weight="1"
+                android:onClick="humber" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/ramenbutton3"
+                android:layout_weight="1"
+                android:onClick="ramen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sportsbutton2"
+                android:layout_weight="1"
+                android:onClick="sports" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="説明"
+                android:id="@+id/expbutton"
+                android:layout_weight="1"
+                android:onClick="explain" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
